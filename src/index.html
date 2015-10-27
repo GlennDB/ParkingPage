@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="dist/css/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Parkeren in Gent</h1>
+    <h2>Filters</h2>
+    <fieldset>
+        <legend>Filters</legend>
+        <form>
+            <div class="form-group">
+                <label for="filterdescription">Filter op beschrijving</label>
+                <input type="text" class="form-control" id="filterdescription" placeholder="Vrijdagmarkt">
+                
+            </div>
+            <button id="filterButton" class="btn"><i class="glyphicon glyphicon-filter"></i> Filter</button>
+        </form>
+    </fieldset>
+    <h2>Overview</h2>
+    <img src="assets/wait.gif" id="waitGif" />
+    <section id="parkingSection">
+        <ul id="parkingSpots">
+            <li class="parking"></li>
+        </ul>
+    </section>
+
+<script src="dist/js/app.min.js"></script>
+</body>
+</html>

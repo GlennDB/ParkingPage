@@ -1,0 +1,45 @@
+@import "variables.less";
+@import "mixins.less";
+
+#parkingSection{
+  width: 960px;
+  .centered;
+
+  >ul{
+    list-style-type: none;
+  }
+}
+
+.parking{
+  display: inline-block;
+  width: @parkingDimensions;
+  height: @parkingDimensions;
+  background-color: @defaultParkingBackground;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+
+  &:hover{
+    background-color: darken(@defaultParkingBackground, 5%);
+  }
+
+  > .parking-sign{
+    font-weight: bold;
+    font-size: 78px;
+  }
+}
+
+.parking-full{
+  background-color: @fullParkingBackground;
+  &:hover{
+    background-color: darken(@fullParkingBackground, 10%);
+  }
+}
+
+.parking-warning{
+  background-color: @warningParkingBackground;
+  &:hover{
+    background-color: darken(@warningParkingBackground, 10%);
+  }
+}
